@@ -1,5 +1,9 @@
+# flask --app app.py --debug run
 from flask import Flask, render_template, request
+import sqlite3
 
+db = sqlite3.connect('database.db')
+db.close()
 app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
