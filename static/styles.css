@@ -2,7 +2,11 @@ body{
     background-color: aqua;
 }
 div{
+    display:flex;
     background-color: tan;
+}
+h2{
+    flex-direction: column;
 }
 
 
