@@ -1,16 +1,37 @@
 *{
-    border:2px black solid;
+
 }
 body{
-    background-color: aqua;
+    background-image: url("/static/photos/background.png");
+
 }
-div{
-    display:flex;
+.nav{
+    background:tan;
+    width:fit-content;
+    margin-left: 100px;
+    border:2px black solid;
+}
+.dropdown-item{
+    background-color: lightcoral;
+}
+.content{
     background-color: tan;
-    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-h2{
+img{
+    height: 200px;
+    width: 200px;
+}
+.store{
     display:flex;
+    flex-direction: row;
+    border:2px black solid;
+}
+.words{
+    display:flex;
+    flex-direction: column;
+    padding-left: 20px;
 }
 
 
