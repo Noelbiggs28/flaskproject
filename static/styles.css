@@ -1,12 +1,16 @@
+*{
+    border:2px black solid;
+}
 body{
     background-color: aqua;
 }
 div{
     display:flex;
     background-color: tan;
+    flex-direction: column;
 }
 h2{
-    flex-direction: column;
+    display:flex;
 }
 
 
