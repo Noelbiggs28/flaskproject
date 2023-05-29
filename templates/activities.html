@@ -5,20 +5,20 @@ home
 {% block content %}
 <ul class="nav nav-tabs">
     <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
+        <a class="nav-link" aria-current="page" href="/">Home</a>
     </li>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Stores</a>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/stores">Stores</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/keke">Growing Keiki</a></li>
+            <li><a class="dropdown-item" href="keke">Growing Keiki</a></li>
             <li><a class="dropdown-item" href="#">Makers market</a></li>
             <li><a class="dropdown-item" href="#">HopScotch</a></li>
         </ul>
     </li>
     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Activities</a>
+        <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Activities</a>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/stores">Activities</a></li>
             <li><hr class="dropdown-divider"></li>
@@ -30,15 +30,43 @@ home
     <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
     </li>
-</ul>
+  </ul>
 <div class="content">
-    <h1>Hello there!!!!</h1>
-    <div class="columns">
-        <p><a href="/stores"><img src="/static/photos/shopping.png"></a><br> stores</p>
-        <p><a href="/activities"><img src="/static/photos/activities.png"></a><br>activies</p>
-        <p><img src="/static/photos/activities.png"><br>other</p>
+    <h1>Check these stores out</h1>
+    <div class="store">
+        <img src="./static/photos/growing.png">
+        <div class="words">
+            <h2>
+                Growing Keiki
+            </h2>
+            <h6>
+                little store in haleva.
+            </h6>
+        </div>
     </div>
-    <h2>Send suggestions here</h2>
+    <div class="store">
+        <img src="./static/photos/makers.png">
+        <div class="words">
+            <h2>
+                Makers Market
+            </h2>
+            <h6>
+                traveling popupstores
+            </h6>
+        
+        </div>
+    </div>
+    <div class="store">
+        <img src="./static/photos/HopScotch.png">
+        <div class="words">
+            <h2>
+                Hopscotch
+            </h2>
+            <h6>
+                small store in honolulu 
+            </h6>
+        
+        </div>
+    </div>
 </div>
-
 {% endblock %}

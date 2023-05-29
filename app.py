@@ -15,6 +15,10 @@ def index():
 def stores():
     return render_template('stores.html')
 
+@app.route('/activities')
+def activities():
+    return render_template('activities.html')
+
 @app.route("/keke")
 def keke():
     return render_template('keke.html')

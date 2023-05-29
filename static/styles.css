@@ -1,5 +1,5 @@
 *{
-
+border:2px black solid;
 }
 body{
     background-image: url("/static/photos/background.png");
@@ -18,6 +18,16 @@ body{
     background-color: tan;
     margin-left: 100px;
     margin-right: 100px;
+}
+.columns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+.imgcaps{
+    padding-left:60px;
+
 }
 h1{
     text-align: center;
