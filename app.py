@@ -19,6 +19,10 @@ def stores():
 def activities():
     return render_template('activities.html')
 
+@app.route('/suggestions', methods=["GET", "POST"])
+def suggestions():
+    return render_template('suggestions.html')
+
 @app.route("/keke")
 def keke():
     return render_template('keke.html')
