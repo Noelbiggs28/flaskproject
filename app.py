@@ -3,8 +3,7 @@
 from flask import Flask, render_template, request
 import sqlite3
 
-db = sqlite3.connect('database.db')
-db.close()
+
 app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
@@ -21,7 +20,14 @@ def activities():
 
 @app.route('/suggestions', methods=["GET", "POST"])
 def suggestions():
-    return render_template('suggestions.html')
+    if request.method == "GET":
+        return render_template('suggestions.html')
+    else:
+        name = request.form.get('name')
+        description = request.form.get('description')
+        with sqlite3.connect("database.db") as con:
+            con.execute("INSERT INTO suggestions (name, description) VALUES(?, ?)", (name, description))
+        return render_template('index.html')
 
 @app.route("/keke")
 def keke():

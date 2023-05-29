@@ -32,9 +32,9 @@ home
     </li>
 </ul>
 <div class="content">
-    <form>
-        <p>Name of place: <input required type="text"></p>
-        <p>Description of place: <input type="text"></p>
+    <form action="/suggestions" method="post">
+        <p>Name of place: <input name="name"required type="text"></p>
+        <p>Description of place: <input name="description" type="text"></p>
         <p>link to place: <input type="text"></p>
         <button type="submit">Send</button>
     </form>
