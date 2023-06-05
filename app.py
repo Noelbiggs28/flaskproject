@@ -32,3 +32,7 @@ def suggestions():
 @app.route("/keke")
 def keke():
     return render_template('keke.html')
+
+@app.route("/aqua")
+def aquarium():
+    return render_template('aqua.html')
