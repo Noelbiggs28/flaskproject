@@ -36,3 +36,15 @@ def keke():
 @app.route("/aqua")
 def aquarium():
     return render_template('aqua.html')
+
+@app.route("/hopscotch")
+def hopscotch():
+    return render_template('hopscotch.html')
+
+@app.route("/lighthouse")
+def lighthouse():
+    return render_template('lighthouse.html')
+
+@app.route("/makers_market")
+def makers_market():
+    return render_template('makers_market.html')
