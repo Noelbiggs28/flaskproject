@@ -1,18 +1,18 @@
 {% extends "layout.html" %}
 {% block title %}
-home
+aquarium
 {% endblock %}
 {% block content %}
 <ul class="nav nav-tabs">
     <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/">Home</a>
+        <a class="nav-link" aria-current="page" href="/">Home</a>
     </li>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Stores</a>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/stores">Stores</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/keke">Growing Keiki</a></li>
+            <li><a class="dropdown-item" href="keke">Growing Keiki</a></li>
             <li><a class="dropdown-item" href="#">Makers market</a></li>
             <li><a class="dropdown-item" href="#">HopScotch</a></li>
         </ul>
@@ -22,7 +22,7 @@ home
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/stores">Activities</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="/aquarium">Aquarium</a></li>
+            <li><a class="dropdown-item active" href="#">Aquarium</a></li>
             <li><a class="dropdown-item" href="#">Lighthouse</a></li>
             <li><a class="dropdown-item" href="#">Separated link</a></li>
         </ul>
@@ -30,17 +30,6 @@ home
     <li class="nav-item">
         <a class="nav-link" href="/suggestions">Suggestions</a>
     </li>
-</ul>
-<div class="content">
-    <h1>Hello there!!!!</h1>
-    <div class="columns">
-        <p><a href="/stores"><img src="/static/photos/shopping.png"></a><br> stores</p>
-        <p><a href="/activities"><img src="/static/photos/activities.png"></a><br>activies</p>
-        <p><img src="/static/photos/activities.png"><br>other</p>
-    </div>
-    <h2>Send suggestions here <a href="/suggestions">here</a></h2>
-    <h3 id="newSuggestions">We have 0 new suggestions</h3>
-    <!-- <h3 id="test">We have 0 new suggestions</h3> -->
-</div>
-
+  </ul>
+<h1>Check these stores out</h1>
 {% endblock %}
