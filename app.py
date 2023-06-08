@@ -8,19 +8,16 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-    if request.method == "GET" or request.method == "POST":
-        conn = sqlite3.connect('database.db')
-        cursor = conn.cursor()
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
 
-        cursor.execute("SELECT COUNT(*) FROM suggestions")
-        result = cursor.fetchone()
-        row_count = result[0]
+    cursor.execute("SELECT COUNT(*) FROM suggestions")
+    result = cursor.fetchone()
+    row_count = result[0]
 
-        cursor.close()
-        conn.close()
-
-        jsonify(row_count)
-        return render_template('index.html', row_count=row_count)
+    cursor.close()
+    conn.close()
+    return render_template('index.html', row_count=row_count)
 
 @app.route("/stores")
 def stores():
